@@ -1,0 +1,33 @@
+[{
+    "id": 24605936,
+    "quiz_id": 1280005,
+    "quiz_group_id": null,
+    "assessment_question_id": 57823017,
+    "position": 1,
+    "question_name": "Question 1",
+    "question_type": "essay_question",
+    "question_text": "<link rel=\"stylesheet\" href=\"https://instructure-uploads-2.s3.amazonaws.com/account_20000000000014/attachments/67207171/uofu_canvas_mobile.css\"><p style=\"padding-left: 30px;\"><strong>1</strong>.In 1985 a Union Carbide plant in West Virginia experienced an MIC leak.  Nobody died but about 135 people were injured.  In 1986 Congress passed legislation, which requires chemical plants to have emergency planning for chemical releases and full public disclosure of threats from toxic chemicals.  India does not have regulations of this sort.  If a US corporation opens a new chemical plant in India should they act according to the US regulations or Indian regulations?  If an Indian corporation opens a new plant in the US should they act according to US regulations or Indian regulations?  Explain your answers.Do you think it is morally acceptable for the Union Carbide management to adopt different safety standards for the Indian plant than for the American plant based on the fact that Indian regulations are different than American regulations?   In essence, it would be legal but do you think it was ethical?  Why or why not?</p>\n<p style=\"text-align: left;\"><strong>OR</strong></p>\n<p style=\"text-align: left; padding-left: 30px;\"><strong>2. </strong>What is the role of the ‘unknown’ in Union Carbide gas leak case? How did the unknown manifest in terms of the gas, its use and in its mitigation? All these questions to be discussed within the context of Bhopal and gas leak in Union Carbide factory. In your discussion, begin with a definition of unknown and its relationship with technology (innovation and use.) Include a discussion of risk and risk tolerance with respect to unknowns and technological use in different cultural settings. Then identify the conditions (social, political, economic etc.,) in which unknown is acceptable. Is it acceptable to institute technology when there are so many unknowns? How would the Amish’s perspective inform in the analysis of this case?</p><script src=\"https://instructure-uploads-2.s3.amazonaws.com/account_20000000000014/attachments/72067999/uofu_canvas_mobile.js\"></script>",
+    "variables": null,
+    "formulas": null,
+    "answer_tolerance": null,
+    "formula_decimal_places": null,
+    "matches": null,
+    "flagged": false,
+    "correct": "defined"
+}, {
+    "id": 24605937,
+    "quiz_id": 1280005,
+    "quiz_group_id": null,
+    "assessment_question_id": 57822985,
+    "position": 2,
+    "question_name": "Question 2",
+    "question_type": "essay_question",
+    "question_text": "<link rel=\"stylesheet\" href=\"https://instructure-uploads-2.s3.amazonaws.com/account_20000000000014/attachments/67207171/uofu_canvas_mobile.css\"><p style=\"padding-left: 30px;\"><strong>1.</strong> UCC never publicly accepted liability for the Bhopal catastrophe. Their strategy for negotiations focused on a fixed settlement that would allow them to walk away from Bhopal and its victims. What moral responsibility did UCIL (and UCC) have towards the Bhopal victims? What systems need to be in place to prevent corporations such as UCC from \"walking away\" from catastrophes such as these?</p>\n<p style=\"padding-left: 30px;\"><strong>OR</strong></p>\n<p style=\"padding-left: 30px;\"><strong>2</strong>. Almost all ethical issues raised by new technologies are related in one way or another to questions of risk.  Answer the following questions based on the Bhopal gas leak case: Are the risks of a new technology predictable? How large are the risks and are they reversible? Are the benefits worth the potential risks, and who should decide? Do those persons on whom the risks will fall know about the risk and have they consented to bear these risks? Will they be justly compensated for their losses? Are the risks fairly distributed among various parts of society including poor and rich, young and old, future and present generations?</p><script src=\"https://instructure-uploads-2.s3.amazonaws.com/account_20000000000014/attachments/72067999/uofu_canvas_mobile.js\"></script>",
+    "variables": null,
+    "formulas": null,
+    "answer_tolerance": null,
+    "formula_decimal_places": null,
+    "matches": null,
+    "flagged": false,
+    "correct": "defined"
+}]
