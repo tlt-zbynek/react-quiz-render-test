@@ -1,0 +1,41 @@
+[
+  {
+    "id": 24994311,
+    "quiz_id": 1307989,
+    "quiz_group_id": null,
+    "assessment_question_id": 59026799,
+    "position": 1,
+    "question_name": "Question 1",
+    "question_type": "multiple_choice_question",
+    "question_text": "<link rel=\"stylesheet\" href=\"https://instructure-uploads-2.s3.amazonaws.com/account_20000000000014/attachments/67207171/uofu_canvas_mobile.css\"><p>How many fingers has a cat?</p><script src=\"https://instructure-uploads-2.s3.amazonaws.com/account_20000000000014/attachments/72067999/uofu_canvas_mobile.js\"></script>",
+    "answers": [
+      {
+        "id": 2123,
+        "text": "No fingers only claws",
+        "html": ""
+      },
+      {
+        "id": 3054,
+        "text": "20",
+        "html": ""
+      },
+      {
+        "id": 7406,
+        "text": "10",
+        "html": ""
+      },
+      {
+        "id": 1561,
+        "text": "4",
+        "html": ""
+      }
+    ],
+    "variables": null,
+    "formulas": null,
+    "answer_tolerance": null,
+    "formula_decimal_places": null,
+    "matches": null,
+    "flagged": false,
+    "correct": false
+  }
+]
