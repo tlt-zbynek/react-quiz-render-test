@@ -69,21 +69,16 @@ class App extends Component {
     renderByQuestionType(question){
         const renderedQuestionText = this.htmlToReactParser.parse(question.question_text);
         //console.log("this.state.answers: ", this.state.answers);
-        const studentAnswer = this.state.answers.reduce((studentAnswer, answer) => {
-            console.log(question.id);
-            // console.log(answer.question_id);
-            return (answer.question_id === question.id ? answer : studentAnswer);
-        }, null);
+        const studentAnswer = this.state.answers.reduce((studentAnswer, answer) => (answer.question_id === question.id ? answer : studentAnswer), null);
         if (!studentAnswer)
             throw new Error("Error: couldn't match student answer to a question!");
 
         let mappedAnswers = null;
         switch (question.question_type) {
             case this.QUESTION_TYPES.MULTIPLE_CHOICE_QUESTION:
-
                 mappedAnswers = question.answers.map(possibleAnswer => {
-                    const answer = studentAnswer.answer_id === possibleAnswer.id ? "Student Answered: " + possibleAnswer.text : possibleAnswer.text;
-                    const answerCorrected = possibleAnswer.weight === 100 ? answer + " <-- Correct!" : answer;
+                    const answer = studentAnswer.answer_id === possibleAnswer.id ? possibleAnswer.text + " <-- Student Answered": possibleAnswer.text;
+                    const answerCorrected = possibleAnswer.weight === 100 ? "Correct! --> " + answer : "-----------> " + answer;
                     return (
                         <div>{answerCorrected}</div>
                     );
@@ -97,7 +92,11 @@ class App extends Component {
                 // TODO:
                 break;
             case this.QUESTION_TYPES.ESSAY_QUESTION:
-                // TODO:
+                mappedAnswers = (
+                  <div>
+
+                  </div>
+                );
                 break;
             case this.QUESTION_TYPES.CALCULATED_QUESTION:
                 // TODO:
@@ -125,7 +124,7 @@ class App extends Component {
                 break;
             default:
             // not found show generic rendering
-                return (
+                mappedAnswers = (
                     <div>To Do:</div>
                 );
         }
