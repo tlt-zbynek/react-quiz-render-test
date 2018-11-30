@@ -15,24 +15,36 @@ function buildOptions(url) {
 }
 const CANVAS_DOMAIN = "https://yourdomain";
 
-async function fetchData() {
-    console.log("getting description...\n\n\n\n");
-    const canvasAssignmentDescription = JSON.parse(await request.get(buildOptions(CANVAS_DOMAIN + "/api/v1/courses/" + canvasCourseId + "/assignments/" + canvasAssignmentId))).description;
-//console.log(canvasAssignmentDescription, "\n\n\n\n");
+async function logJson() {
+    const canvasCourseId = 509953; //506631;
+    const canvasUserId = 289546;//230427;
+    const canvasAssignmentId = 5477002; //5344657;
 
-    console.log("getting questions...\n\n\n\n");
-    const canvasQuizQuestions = JSON.parse(await request.get(buildOptions(CANVAS_DOMAIN + "/api/v1/quiz_submissions/" + canvasSubmissionId + "/questions"))).quiz_submission_questions;
-// console.log(JSON.stringify(canvasQuizQuestions), "\n\n\n\n");
+    try {
+        console.log("getting description...\n");
+        // GET /api/v1/courses/:course_id/assignments/assignment_id
+        const canvasAssignment = JSON.parse(await request.get(buildOptions(CANVAS_DOMAIN + "/api/v1/courses/" + canvasCourseId + "/assignments/" + canvasAssignmentId)));
+        const canvasAssignmentInfo = { name: canvasAssignment.name, description: canvasAssignment.description };
+        console.log(JSON.stringify(canvasAssignmentInfo), "\n\n\n\n");
 
-    console.log("getting answers...\n\n\n\n");
-// get answers per questions
-    const submissionHistory = JSON.parse(await request.get(buildOptions(CANVAS_DOMAIN + "/api/v1/courses/" + canvasCourseId + "/assignments/" + canvasAssignmentId + "/submissions/" + canvasUserId + "?include[]=submission_history"))).submission_history;
-    const answersPerQuestions = submissionHistory.filter(submission => {
-        console.log(typeof submission.id);
-        console.log(typeof canvasSubmissionId);
-        console.log(submission.id === canvasSubmissionId);
-        return submission.id === canvasSubmissionId;
-    })[0].submission_data;
-    console.log(JSON.stringify(answersPerQuestions), "\n\n\n\n");
+        console.log("getting questions...\n");
+        // get quiz id first
+        const canvasQuizId = canvasAssignment.quiz_id;
+        //GET /api/v1/courses/:course_id/quizzes/:quiz_id/questions
+        const canvasQuizQuestions = JSON.parse(await request.get(buildOptions(CANVAS_DOMAIN + "/api/v1/courses/" + canvasCourseId + "/quizzes/" + canvasQuizId + "/questions")));
+        console.log(JSON.stringify(canvasQuizQuestions), "\n\n\n\n");
+        // not sufficiant to build the question
+
+        console.log("getting answers...\n");
+        // get answers per questions
+        const submissionHistory = JSON.parse(await request.get(buildOptions(CANVAS_DOMAIN + "/api/v1/courses/" + canvasCourseId + "/assignments/" + canvasAssignmentId + "/submissions/" + canvasUserId + "?include[]=submission_history"))).submission_history;
+        console.log("submissionHistory.length: ", submissionHistory.length);
+        // keep one with the highest score
+        const highestScoreSubmission = submissionHistory.reduce((higherScoreSubmission, submission) => (submission.score > higherScoreSubmission.score ? submission : higherScoreSubmission));
+        const submissionData = highestScoreSubmission.submission_data;
+        console.log(JSON.stringify(submissionData), "\n\n\n\n");
+    } catch (err) {
+        console.log(err);
+    }
 }
 

@@ -1,13 +1,112 @@
-[{
-    "correct": "defined",
-    "points": 4,
-    "question_id": 24605936,
-    "text": "<p><span style=\"font-weight: 400;\">1</span></p>\r\n<p><span style=\"font-weight: 400;\">While it is legally fair that a US company abroad should follow the laws of the host country, it is ethically much more important that the company follows US regulations. If you look at a totally opposite case of US tech companies in China you will see that it would be morally wrong for the US subsidiary to follow some Chinese laws. An example would be Microsoft's Bing search engine and Google. Both companies originally existed in China, but in order to follow Chinese law the search history must be accessible by the Chinese government, as well as the search results. Google refused to work with the Chinese government to tamper with search results to remove anti-government info, as well as refusing to share searches and client information with Chinese law enforcement. (Clark, 2018) Google's refusal to put up with corrupt Chinese laws was not something that was required, but was taking a moral high ground that Bing and other search engines did not take. Companies should be required to hold people's safety and privacy up to a higher standard, and a good way for this to be possible is to require that both country's laws and regulations are followed. In the example of UCIL, following both American and Indian regulations would have prevented the MIC accident from ever happening. (Werfelman, 2018) This should not be a choice that companies face, but a requirement.  </span></p>\r\n<p><span style=\"font-weight: 400;\">Clark, G. (2018). Why China’s Great Firewall Bans Google. [online] Washington Post. Available at: https://www.washingtonpost.com/business/why-chinas-great-firewall-bans-google-and-pooh-bear-quicktake/2017/11/30/d4ab9f34-d646-11e7-9ad9-ca0619edfa05_story.html [Accessed 16 Sep. 2018].</span></p>\r\n<p><span style=\"font-weight: 400;\">Werfelman, L. (2018). Bhopal spill could have been prevented. [online] UPI. Available at: https://www.upi.com/Archives/1985/07/31/Report-Bhopal-spill-could-have-been-prevented/5889491630400/ [Accessed 15 Sep. 2018].</span></p>",
-    "more_comments": "Good citations, just next time make sure that they are in IEEE format, also don't forget to answer all parts of the question fully. "
-}, {
+[
+  {
+    "correct": true,
+    "points": 1,
+    "question_id": 24994311,
+    "answer_id": 2123,
+    "text": "2123",
+    "more_comments": ""
+  },
+  {
+    "correct": true,
+    "points": 1,
+    "question_id": 25742292,
+    "answer_id": 612,
+    "text": "612",
+    "more_comments": ""
+  },
+  {
+    "correct": true,
+    "points": 1,
+    "question_id": 25742833,
+    "answer_id": 9635,
+    "text": "9635",
+    "more_comments": ""
+  },
+  {
+    "correct": true,
+    "points": 1,
+    "question_id": 25742866,
+    "answer_id": 8411,
+    "text": "blank",
+    "more_comments": ""
+  },
+  {
+    "correct": true,
+    "points": 1,
+    "question_id": 25742896,
+    "text": "",
+    "answer_for_color1": "red",
+    "answer_id_for_color1": 8397,
+    "answer_for_color2": "purple",
+    "answer_id_for_color2": 851,
+    "more_comments": ""
+  },
+  {
+    "correct": false,
+    "points": 0,
+    "question_id": 25742909,
+    "text": "",
+    "answer_5656": "0",
+    "answer_7531": "1",
+    "more_comments": ""
+  },
+  {
+    "correct": true,
+    "points": 1,
+    "question_id": 25743149,
+    "text": "",
+    "answer_for_color1": 8486,
+    "answer_id_for_color1": 8486,
+    "answer_for_color2": 5819,
+    "answer_id_for_color2": 5819,
+    "more_comments": ""
+  },
+  {
+    "correct": true,
+    "points": 1,
+    "question_id": 25743177,
+    "text": "",
+    "answer_3153": "7282",
+    "answer_5821": "1135",
+    "more_comments": ""
+  },
+  {
+    "correct": true,
+    "points": 1,
+    "question_id": 25743233,
+    "answer_id": 5181,
+    "text": "1.0000",
+    "more_comments": ""
+  },
+  {
+    "correct": true,
+    "points": 1,
+    "question_id": 25743244,
+    "answer_id": 4924,
+    "text": "93.0000",
+    "more_comments": ""
+  },
+  {
     "correct": "defined",
     "points": 1,
-    "question_id": 24605937,
-    "text": "<p>2</p>\r\n<p>New technology does always come with new risks, both seen and unseen. One very dangerous example that comes to mind is the US’ nuclear testing during the cold war. While some dangers of the bomb testing were known and obviously apparent, the long-term effects were either unknown or overlooked. The large-scale nuclear testing resulted in some deaths right away, but trends have been shown, largely including a spike in lethal thyroid cancer in the US years after the tests. (Fernholz, 2018) Those who lived near the testing sites were later compensated in payments totaling more than two billion USD, but researchers have shown even more were negatively affected through beef and milk that was produced near the testing sites. (Fernholz, 2018)</p>\r\n<p>Business has always taken advantage of cheap labor, even at a risk to the health of employees. During the industrial revolution in the United States child workers were exposed to terribly dangerous working conditions, often with terrible consequences: losing fingers or hands in dangerous machines, or even death. (Rich, 2018) This is just one of many examples of US corporations taking advantage of the poor and weak to come out on top. Society almost never bears the risks of technology equally, with a definite bias towards those less advantaged.</p>\r\n<p> </p>\r\n<p>Fernholz, T. (2018). US nuclear tests killed far more civilians than we knew. [online] Quartz. Available at: https://qz.com/1163140/us-nuclear-tests-killed-american-civilians-on-a-scale-comparable-to-hiroshima-and-nagasaki/ [Accessed 16 Sep. 2018].</p>\r\n<p>Rich, C. (2018). Child Labor During the Industrial Revolution. [online] Childhood Lost. Available at: http://www.eiu.edu/eiutps/childhood.php [Accessed 16 Sep. 2018].</p>",
-    "more_comments": "These are nice comparisons, but you didn't actually answer the initial question... Also, review what IEEE citation looks like. "
-}]
+    "question_id": 25743246,
+    "text": "<p>cat is cool and has a fur</p>",
+    "more_comments": "good"
+  },
+  {
+    "correct": "defined",
+    "points": 1,
+    "question_id": 25743248,
+    "attachment_ids": [
+      "83407848"
+    ],
+    "more_comments": "that works"
+  },
+  {
+    "correct": "undefined",
+    "points": 0,
+    "question_id": 25743265,
+    "text": ""
+  }
+]

@@ -1,33 +1,706 @@
-[{
-    "id": 24605936,
-    "quiz_id": 1280005,
+[
+  {
+    "id": 24994311,
+    "quiz_id": 1307989,
     "quiz_group_id": null,
-    "assessment_question_id": 57823017,
-    "position": 1,
-    "question_name": "Question 1",
-    "question_type": "essay_question",
-    "question_text": "<link rel=\"stylesheet\" href=\"https://instructure-uploads-2.s3.amazonaws.com/account_20000000000014/attachments/67207171/uofu_canvas_mobile.css\"><p style=\"padding-left: 30px;\"><strong>1</strong>.In 1985 a Union Carbide plant in West Virginia experienced an MIC leak.  Nobody died but about 135 people were injured.  In 1986 Congress passed legislation, which requires chemical plants to have emergency planning for chemical releases and full public disclosure of threats from toxic chemicals.  India does not have regulations of this sort.  If a US corporation opens a new chemical plant in India should they act according to the US regulations or Indian regulations?  If an Indian corporation opens a new plant in the US should they act according to US regulations or Indian regulations?  Explain your answers.Do you think it is morally acceptable for the Union Carbide management to adopt different safety standards for the Indian plant than for the American plant based on the fact that Indian regulations are different than American regulations?   In essence, it would be legal but do you think it was ethical?  Why or why not?</p>\n<p style=\"text-align: left;\"><strong>OR</strong></p>\n<p style=\"text-align: left; padding-left: 30px;\"><strong>2. </strong>What is the role of the ‘unknown’ in Union Carbide gas leak case? How did the unknown manifest in terms of the gas, its use and in its mitigation? All these questions to be discussed within the context of Bhopal and gas leak in Union Carbide factory. In your discussion, begin with a definition of unknown and its relationship with technology (innovation and use.) Include a discussion of risk and risk tolerance with respect to unknowns and technological use in different cultural settings. Then identify the conditions (social, political, economic etc.,) in which unknown is acceptable. Is it acceptable to institute technology when there are so many unknowns? How would the Amish’s perspective inform in the analysis of this case?</p><script src=\"https://instructure-uploads-2.s3.amazonaws.com/account_20000000000014/attachments/72067999/uofu_canvas_mobile.js\"></script>",
+    "assessment_question_id": 59026799,
+    "position": null,
+    "question_name": "question1 Multiple Choice",
+    "question_type": "multiple_choice_question",
+    "question_text": "<link rel=\"stylesheet\" href=\"https://instructure-uploads-2.s3.amazonaws.com/account_20000000000014/attachments/67207171/uofu_canvas_mobile.css\"><p>How many fingers has a cat?</p><script src=\"https://instructure-uploads-2.s3.amazonaws.com/account_20000000000014/attachments/72067999/uofu_canvas_mobile.js\"></script>",
+    "points_possible": 1,
+    "correct_comments": "",
+    "incorrect_comments": "",
+    "neutral_comments": "",
+    "correct_comments_html": "",
+    "incorrect_comments_html": "",
+    "neutral_comments_html": "",
+    "answers": [
+      {
+        "id": 2123,
+        "text": "No fingers only claws",
+        "html": "",
+        "comments": "",
+        "comments_html": "",
+        "weight": 100
+      },
+      {
+        "id": 3054,
+        "text": "20",
+        "html": "",
+        "comments": "",
+        "comments_html": "",
+        "weight": 0
+      },
+      {
+        "id": 7406,
+        "text": "10",
+        "html": "",
+        "comments": "",
+        "comments_html": "",
+        "weight": 0
+      },
+      {
+        "id": 1561,
+        "text": "4",
+        "html": "",
+        "comments": "",
+        "comments_html": "",
+        "weight": 0
+      }
+    ],
     "variables": null,
     "formulas": null,
     "answer_tolerance": null,
     "formula_decimal_places": null,
     "matches": null,
-    "flagged": false,
-    "correct": "defined"
-}, {
-    "id": 24605937,
-    "quiz_id": 1280005,
+    "matching_answer_incorrect_matches": null
+  },
+  {
+    "id": 25742292,
+    "quiz_id": 1307989,
     "quiz_group_id": null,
-    "assessment_question_id": 57822985,
-    "position": 2,
-    "question_name": "Question 2",
-    "question_type": "essay_question",
-    "question_text": "<link rel=\"stylesheet\" href=\"https://instructure-uploads-2.s3.amazonaws.com/account_20000000000014/attachments/67207171/uofu_canvas_mobile.css\"><p style=\"padding-left: 30px;\"><strong>1.</strong> UCC never publicly accepted liability for the Bhopal catastrophe. Their strategy for negotiations focused on a fixed settlement that would allow them to walk away from Bhopal and its victims. What moral responsibility did UCIL (and UCC) have towards the Bhopal victims? What systems need to be in place to prevent corporations such as UCC from \"walking away\" from catastrophes such as these?</p>\n<p style=\"padding-left: 30px;\"><strong>OR</strong></p>\n<p style=\"padding-left: 30px;\"><strong>2</strong>. Almost all ethical issues raised by new technologies are related in one way or another to questions of risk.  Answer the following questions based on the Bhopal gas leak case: Are the risks of a new technology predictable? How large are the risks and are they reversible? Are the benefits worth the potential risks, and who should decide? Do those persons on whom the risks will fall know about the risk and have they consented to bear these risks? Will they be justly compensated for their losses? Are the risks fairly distributed among various parts of society including poor and rich, young and old, future and present generations?</p><script src=\"https://instructure-uploads-2.s3.amazonaws.com/account_20000000000014/attachments/72067999/uofu_canvas_mobile.js\"></script>",
+    "assessment_question_id": 59989224,
+    "position": null,
+    "question_name": "question 2 Multiple Choice",
+    "question_type": "multiple_choice_question",
+    "question_text": "<link rel=\"stylesheet\" href=\"https://instructure-uploads-2.s3.amazonaws.com/account_20000000000014/attachments/67207171/uofu_canvas_mobile.css\"><p>How tall is a cat?</p><script src=\"https://instructure-uploads-2.s3.amazonaws.com/account_20000000000014/attachments/72067999/uofu_canvas_mobile.js\"></script>",
+    "points_possible": 1,
+    "correct_comments": "",
+    "incorrect_comments": "",
+    "neutral_comments": "",
+    "correct_comments_html": "",
+    "incorrect_comments_html": "",
+    "neutral_comments_html": "",
+    "answers": [
+      {
+        "id": 612,
+        "text": "1 feet",
+        "html": "",
+        "comments": "",
+        "comments_html": "",
+        "weight": 100
+      },
+      {
+        "id": 3025,
+        "text": "5 feet",
+        "html": "",
+        "comments": "",
+        "comments_html": "",
+        "weight": 0
+      },
+      {
+        "id": 2825,
+        "text": "3 feet",
+        "html": "",
+        "comments": "",
+        "comments_html": "",
+        "weight": 0
+      },
+      {
+        "id": 2650,
+        "text": "4 feet",
+        "html": "",
+        "comments": "",
+        "comments_html": "",
+        "weight": 0
+      }
+    ],
     "variables": null,
     "formulas": null,
     "answer_tolerance": null,
     "formula_decimal_places": null,
     "matches": null,
-    "flagged": false,
-    "correct": "defined"
-}]
+    "matching_answer_incorrect_matches": null
+  },
+  {
+    "id": 25742833,
+    "quiz_id": 1307989,
+    "quiz_group_id": null,
+    "assessment_question_id": 59989932,
+    "position": null,
+    "question_name": "Question3 True/False",
+    "question_type": "true_false_question",
+    "question_text": "<link rel=\"stylesheet\" href=\"https://instructure-uploads-2.s3.amazonaws.com/account_20000000000014/attachments/67207171/uofu_canvas_mobile.css\"><p>Is water on Moon?</p><script src=\"https://instructure-uploads-2.s3.amazonaws.com/account_20000000000014/attachments/72067999/uofu_canvas_mobile.js\"></script>",
+    "points_possible": 1,
+    "correct_comments": "",
+    "incorrect_comments": "",
+    "neutral_comments": "",
+    "correct_comments_html": "",
+    "incorrect_comments_html": "",
+    "neutral_comments_html": "",
+    "answers": [
+      {
+        "comments": "",
+        "comments_html": "",
+        "text": "True",
+        "weight": 100,
+        "id": 9635
+      },
+      {
+        "comments": "",
+        "comments_html": "",
+        "text": "False",
+        "weight": 0,
+        "id": 4912
+      }
+    ],
+    "variables": null,
+    "formulas": null,
+    "answer_tolerance": null,
+    "formula_decimal_places": null,
+    "matches": null,
+    "matching_answer_incorrect_matches": null
+  },
+  {
+    "id": 25742866,
+    "quiz_id": 1307989,
+    "quiz_group_id": null,
+    "assessment_question_id": 59989946,
+    "position": null,
+    "question_name": "Question4 Fill in the Blank",
+    "question_type": "short_answer_question",
+    "question_text": "<link rel=\"stylesheet\" href=\"https://instructure-uploads-2.s3.amazonaws.com/account_20000000000014/attachments/67207171/uofu_canvas_mobile.css\"><p>Testing fill in the __________ quiz.</p><script src=\"https://instructure-uploads-2.s3.amazonaws.com/account_20000000000014/attachments/72067999/uofu_canvas_mobile.js\"></script>",
+    "points_possible": 1,
+    "correct_comments": "",
+    "incorrect_comments": "",
+    "neutral_comments": "",
+    "correct_comments_html": "",
+    "incorrect_comments_html": "",
+    "neutral_comments_html": "",
+    "answers": [
+      {
+        "id": 8411,
+        "text": "blank",
+        "comments": "",
+        "comments_html": "",
+        "weight": 100
+      },
+      {
+        "id": 7664,
+        "text": "Blank",
+        "comments": "",
+        "comments_html": "",
+        "weight": 100
+      }
+    ],
+    "variables": null,
+    "formulas": null,
+    "answer_tolerance": null,
+    "formula_decimal_places": null,
+    "matches": null,
+    "matching_answer_incorrect_matches": null
+  },
+  {
+    "id": 25742896,
+    "quiz_id": 1307989,
+    "quiz_group_id": null,
+    "assessment_question_id": 59989976,
+    "position": null,
+    "question_name": "Question5 Fill In Multiple Blanks",
+    "question_type": "fill_in_multiple_blanks_question",
+    "question_text": "<link rel=\"stylesheet\" href=\"https://instructure-uploads-2.s3.amazonaws.com/account_20000000000014/attachments/67207171/uofu_canvas_mobile.css\"><p><span>Roses are [color1], violets are [color2]</span></p><script src=\"https://instructure-uploads-2.s3.amazonaws.com/account_20000000000014/attachments/72067999/uofu_canvas_mobile.js\"></script>",
+    "points_possible": 1,
+    "correct_comments": "",
+    "incorrect_comments": "",
+    "neutral_comments": "",
+    "correct_comments_html": "",
+    "incorrect_comments_html": "",
+    "neutral_comments_html": "",
+    "answers": [
+      {
+        "id": 8397,
+        "text": "red",
+        "comments": "",
+        "comments_html": "",
+        "weight": 100,
+        "blank_id": "color1"
+      },
+      {
+        "id": 6080,
+        "text": "yellow",
+        "comments": "",
+        "comments_html": "",
+        "weight": 100,
+        "blank_id": "color1"
+      },
+      {
+        "id": 8044,
+        "text": "black",
+        "comments": "",
+        "comments_html": "",
+        "weight": 100,
+        "blank_id": "color1"
+      },
+      {
+        "id": 851,
+        "text": "purple",
+        "comments": "",
+        "comments_html": "",
+        "weight": 100,
+        "blank_id": "color2"
+      },
+      {
+        "id": 6217,
+        "text": "violet",
+        "comments": "",
+        "comments_html": "",
+        "weight": 100,
+        "blank_id": "color2"
+      }
+    ],
+    "variables": null,
+    "formulas": null,
+    "answer_tolerance": null,
+    "formula_decimal_places": null,
+    "matches": null,
+    "matching_answer_incorrect_matches": null
+  },
+  {
+    "id": 25742909,
+    "quiz_id": 1307989,
+    "quiz_group_id": null,
+    "assessment_question_id": 59990016,
+    "position": null,
+    "question_name": "Question6 Multiple Answers",
+    "question_type": "multiple_answers_question",
+    "question_text": "<link rel=\"stylesheet\" href=\"https://instructure-uploads-2.s3.amazonaws.com/account_20000000000014/attachments/67207171/uofu_canvas_mobile.css\"><p>Any furniture has which parts...</p><script src=\"https://instructure-uploads-2.s3.amazonaws.com/account_20000000000014/attachments/72067999/uofu_canvas_mobile.js\"></script>",
+    "points_possible": 1,
+    "correct_comments": "",
+    "incorrect_comments": "",
+    "neutral_comments": "",
+    "correct_comments_html": "<p>Legs</p>",
+    "incorrect_comments_html": "<p>It is not so common</p>",
+    "neutral_comments_html": "",
+    "answers": [
+      {
+        "id": "5656",
+        "text": "Legs",
+        "comments": "",
+        "comments_html": "<p>Great choice!</p>",
+        "weight": 100
+      },
+      {
+        "id": 7531,
+        "text": "Doors",
+        "comments": "",
+        "comments_html": "<p>It is not so uncommon</p>",
+        "weight": 0
+      }
+    ],
+    "variables": null,
+    "formulas": null,
+    "answer_tolerance": null,
+    "formula_decimal_places": null,
+    "matches": null,
+    "matching_answer_incorrect_matches": null
+  },
+  {
+    "id": 25743149,
+    "quiz_id": 1307989,
+    "quiz_group_id": null,
+    "assessment_question_id": 59990343,
+    "position": null,
+    "question_name": "Question7 Multiple Dropdowns",
+    "question_type": "multiple_dropdowns_question",
+    "question_text": "<link rel=\"stylesheet\" href=\"https://instructure-uploads-2.s3.amazonaws.com/account_20000000000014/attachments/67207171/uofu_canvas_mobile.css\"><p><span>Roses are [color1], violets are [color2]</span></p><script src=\"https://instructure-uploads-2.s3.amazonaws.com/account_20000000000014/attachments/72067999/uofu_canvas_mobile.js\"></script>",
+    "points_possible": 1,
+    "correct_comments": "",
+    "incorrect_comments": "",
+    "neutral_comments": "",
+    "correct_comments_html": "",
+    "incorrect_comments_html": "",
+    "neutral_comments_html": "",
+    "answers": [
+      {
+        "id": 8486,
+        "text": "red",
+        "comments": "",
+        "comments_html": "",
+        "weight": 100,
+        "blank_id": "color1"
+      },
+      {
+        "id": 2340,
+        "text": "blue",
+        "comments": "",
+        "comments_html": "",
+        "weight": 0,
+        "blank_id": "color1"
+      },
+      {
+        "id": 5819,
+        "text": "purple",
+        "comments": "",
+        "comments_html": "",
+        "weight": 100,
+        "blank_id": "color2"
+      },
+      {
+        "id": 3639,
+        "text": "white",
+        "comments": "",
+        "comments_html": "",
+        "weight": 0,
+        "blank_id": "color2"
+      }
+    ],
+    "variables": null,
+    "formulas": null,
+    "answer_tolerance": null,
+    "formula_decimal_places": null,
+    "matches": null,
+    "matching_answer_incorrect_matches": null
+  },
+  {
+    "id": 25743177,
+    "quiz_id": 1307989,
+    "quiz_group_id": null,
+    "assessment_question_id": 59990353,
+    "position": null,
+    "question_name": "Question8 Matching",
+    "question_type": "matching_question",
+    "question_text": "<link rel=\"stylesheet\" href=\"https://instructure-uploads-2.s3.amazonaws.com/account_20000000000014/attachments/67207171/uofu_canvas_mobile.css\"><p>Select values on the right to match the value on the left.</p><script src=\"https://instructure-uploads-2.s3.amazonaws.com/account_20000000000014/attachments/72067999/uofu_canvas_mobile.js\"></script>",
+    "points_possible": 1,
+    "correct_comments": "",
+    "incorrect_comments": "",
+    "neutral_comments": "",
+    "correct_comments_html": "",
+    "incorrect_comments_html": "",
+    "neutral_comments_html": "",
+    "answers": [
+      {
+        "id": 3153,
+        "text": "The color of a rose is usually",
+        "left": "The color of a rose is usually",
+        "right": "red",
+        "comments": "",
+        "comments_html": "",
+        "match_id": 7282
+      },
+      {
+        "id": 5821,
+        "text": "The color of a violet is usually",
+        "left": "The color of a violet is usually",
+        "right": "purple",
+        "comments": "",
+        "comments_html": "",
+        "match_id": 1135
+      }
+    ],
+    "variables": null,
+    "formulas": null,
+    "answer_tolerance": null,
+    "formula_decimal_places": null,
+    "matches": [
+      {
+        "text": "red",
+        "match_id": 7282
+      },
+      {
+        "text": "purple",
+        "match_id": 1135
+      },
+      {
+        "text": "black",
+        "match_id": 1832
+      },
+      {
+        "text": "blue",
+        "match_id": 9732
+      },
+      {
+        "text": "yellow",
+        "match_id": 5489
+      },
+      {
+        "text": "Brown",
+        "match_id": 4027
+      }
+    ],
+    "matching_answer_incorrect_matches": "black\nblue\nyellow\nBrown"
+  },
+  {
+    "id": 25743233,
+    "quiz_id": 1307989,
+    "quiz_group_id": null,
+    "assessment_question_id": 59990356,
+    "position": null,
+    "question_name": "Question9 Numerical Answer",
+    "question_type": "numerical_question",
+    "question_text": "<link rel=\"stylesheet\" href=\"https://instructure-uploads-2.s3.amazonaws.com/account_20000000000014/attachments/67207171/uofu_canvas_mobile.css\"><p>How long in seconds does the radio signal travel from Earth to Moon?</p><script src=\"https://instructure-uploads-2.s3.amazonaws.com/account_20000000000014/attachments/72067999/uofu_canvas_mobile.js\"></script>",
+    "points_possible": 1,
+    "correct_comments": "",
+    "incorrect_comments": "",
+    "neutral_comments": "",
+    "correct_comments_html": "",
+    "incorrect_comments_html": "",
+    "neutral_comments_html": "",
+    "answers": [
+      {
+        "id": 5181,
+        "text": "",
+        "comments": "",
+        "comments_html": "",
+        "weight": 100,
+        "numerical_answer_type": "range_answer",
+        "start": 1,
+        "end": 2
+      },
+      {
+        "id": 6787,
+        "text": "",
+        "comments": "",
+        "comments_html": "",
+        "weight": 100,
+        "numerical_answer_type": "range_answer",
+        "start": 60,
+        "end": 120
+      },
+      {
+        "id": 9144,
+        "text": "",
+        "comments": "",
+        "comments_html": "",
+        "weight": 100,
+        "numerical_answer_type": "exact_answer",
+        "exact": 1.2,
+        "margin": 0.5
+      },
+      {
+        "id": 5083,
+        "text": "",
+        "comments": "",
+        "comments_html": "",
+        "weight": 100,
+        "numerical_answer_type": "exact_answer",
+        "exact": 0,
+        "margin": 0
+      }
+    ],
+    "variables": null,
+    "formulas": null,
+    "answer_tolerance": null,
+    "formula_decimal_places": null,
+    "matches": null,
+    "matching_answer_incorrect_matches": null
+  },
+  {
+    "id": 25743244,
+    "quiz_id": 1307989,
+    "quiz_group_id": null,
+    "assessment_question_id": 59990362,
+    "position": null,
+    "question_name": "Question10 Formula Question",
+    "question_type": "calculated_question",
+    "question_text": "<link rel=\"stylesheet\" href=\"https://instructure-uploads-2.s3.amazonaws.com/account_20000000000014/attachments/67207171/uofu_canvas_mobile.css\"><p><span>What is 5 plus [x]?</span></p><script src=\"https://instructure-uploads-2.s3.amazonaws.com/account_20000000000014/attachments/72067999/uofu_canvas_mobile.js\"></script>",
+    "points_possible": 1,
+    "correct_comments": "",
+    "incorrect_comments": "",
+    "neutral_comments": "",
+    "correct_comments_html": "",
+    "incorrect_comments_html": "",
+    "neutral_comments_html": "",
+    "answers": [
+      {
+        "weight": 100,
+        "variables": [
+          {
+            "name": "x",
+            "value": "42"
+          }
+        ],
+        "answer": 47,
+        "id": 9183
+      },
+      {
+        "weight": 100,
+        "variables": [
+          {
+            "name": "x",
+            "value": "64"
+          }
+        ],
+        "answer": 69,
+        "id": 6961
+      },
+      {
+        "weight": 100,
+        "variables": [
+          {
+            "name": "x",
+            "value": "65"
+          }
+        ],
+        "answer": 70,
+        "id": 8170
+      },
+      {
+        "weight": 100,
+        "variables": [
+          {
+            "name": "x",
+            "value": "88"
+          }
+        ],
+        "answer": 93,
+        "id": 4924
+      },
+      {
+        "weight": 100,
+        "variables": [
+          {
+            "name": "x",
+            "value": "71"
+          }
+        ],
+        "answer": 76,
+        "id": 4703
+      },
+      {
+        "weight": 100,
+        "variables": [
+          {
+            "name": "x",
+            "value": "80"
+          }
+        ],
+        "answer": 85,
+        "id": 1684
+      },
+      {
+        "weight": 100,
+        "variables": [
+          {
+            "name": "x",
+            "value": "20"
+          }
+        ],
+        "answer": 25,
+        "id": 3569
+      },
+      {
+        "weight": 100,
+        "variables": [
+          {
+            "name": "x",
+            "value": "8"
+          }
+        ],
+        "answer": 13,
+        "id": 2152
+      },
+      {
+        "weight": 100,
+        "variables": [
+          {
+            "name": "x",
+            "value": "85"
+          }
+        ],
+        "answer": 90,
+        "id": 9602
+      },
+      {
+        "weight": 100,
+        "variables": [
+          {
+            "name": "x",
+            "value": "38"
+          }
+        ],
+        "answer": 43,
+        "id": 1725
+      }
+    ],
+    "variables": [
+      {
+        "name": "x",
+        "min": 0,
+        "max": 100,
+        "scale": 0
+      }
+    ],
+    "formulas": [
+      {
+        "formula": "5 + x"
+      }
+    ],
+    "answer_tolerance": "0",
+    "formula_decimal_places": 0,
+    "matches": null,
+    "matching_answer_incorrect_matches": null
+  },
+  {
+    "id": 25743246,
+    "quiz_id": 1307989,
+    "quiz_group_id": null,
+    "assessment_question_id": 59990366,
+    "position": null,
+    "question_name": "Question11 Essay",
+    "question_type": "essay_question",
+    "question_text": "<link rel=\"stylesheet\" href=\"https://instructure-uploads-2.s3.amazonaws.com/account_20000000000014/attachments/67207171/uofu_canvas_mobile.css\"><p>Write a generic description of any cat.</p><script src=\"https://instructure-uploads-2.s3.amazonaws.com/account_20000000000014/attachments/72067999/uofu_canvas_mobile.js\"></script>",
+    "points_possible": 1,
+    "correct_comments": "",
+    "incorrect_comments": "",
+    "neutral_comments": "",
+    "correct_comments_html": "",
+    "incorrect_comments_html": "",
+    "neutral_comments_html": "",
+    "answers": [],
+    "variables": null,
+    "formulas": null,
+    "answer_tolerance": null,
+    "formula_decimal_places": null,
+    "matches": null,
+    "matching_answer_incorrect_matches": null
+  },
+  {
+    "id": 25743248,
+    "quiz_id": 1307989,
+    "quiz_group_id": null,
+    "assessment_question_id": 59990367,
+    "position": null,
+    "question_name": "Question12 File upload",
+    "question_type": "file_upload_question",
+    "question_text": "<link rel=\"stylesheet\" href=\"https://instructure-uploads-2.s3.amazonaws.com/account_20000000000014/attachments/67207171/uofu_canvas_mobile.css\"><p>Upload any file to test this quiz answer api.</p><script src=\"https://instructure-uploads-2.s3.amazonaws.com/account_20000000000014/attachments/72067999/uofu_canvas_mobile.js\"></script>",
+    "points_possible": 1,
+    "correct_comments": "",
+    "incorrect_comments": "",
+    "neutral_comments": "",
+    "correct_comments_html": "",
+    "incorrect_comments_html": "",
+    "neutral_comments_html": "",
+    "answers": [],
+    "variables": null,
+    "formulas": null,
+    "answer_tolerance": null,
+    "formula_decimal_places": null,
+    "matches": null,
+    "matching_answer_incorrect_matches": null
+  },
+  {
+    "id": 25743265,
+    "quiz_id": 1307989,
+    "quiz_group_id": null,
+    "assessment_question_id": null,
+    "position": null,
+    "question_name": "Question13 Text (no question)",
+    "question_type": "text_only_question",
+    "question_text": "<link rel=\"stylesheet\" href=\"https://instructure-uploads-2.s3.amazonaws.com/account_20000000000014/attachments/67207171/uofu_canvas_mobile.css\"><p>This is the end of quiz 1 test.</p><script src=\"https://instructure-uploads-2.s3.amazonaws.com/account_20000000000014/attachments/72067999/uofu_canvas_mobile.js\"></script>",
+    "points_possible": 0,
+    "correct_comments": "",
+    "incorrect_comments": "",
+    "neutral_comments": "",
+    "correct_comments_html": "",
+    "incorrect_comments_html": "",
+    "neutral_comments_html": "",
+    "answers": [],
+    "variables": null,
+    "formulas": null,
+    "answer_tolerance": null,
+    "formula_decimal_places": null,
+    "matches": null,
+    "matching_answer_incorrect_matches": null
+  }
+]
