@@ -3,9 +3,13 @@ import './App.css';
 
 import {Parser} from 'html-to-react';
 
-import answers from './data/answers';
-import assignment from './data/assignment';
-import questions from './data/questions';
+// import answers from './data/answers';
+// import assignment from './data/assignment';
+// import questions from './data/questions';
+
+import answers from './data/answers_essay';
+import assignment from './data/assignment_essay';
+import questions from './data/questions_essay';
 
 class App extends Component {
 
@@ -111,16 +115,15 @@ class App extends Component {
                 break;
             case this.QUESTION_TYPES.CALCULATED_QUESTION:
                 // TODO:
+                // console.log("studentAnswer: ", JSON.stringify(studentAnswer));
+                // console.log("question: ", JSON.stringify(question));
                 break;
             case this.QUESTION_TYPES.NUMERICAL_QUESTION:
                 // TODO:
-                break;
-            case this.QUESTION_TYPES.MATCHING_QUESTION:
-                // TODO:
-
                 // console.log("studentAnswer: ", JSON.stringify(studentAnswer));
                 // console.log("question: ", JSON.stringify(question));
-
+                break;
+            case this.QUESTION_TYPES.MATCHING_QUESTION:
                 const renderedPossibleMatches = (
                     <ul>
                         {question.matches.map(match => <li>{match.text}</li>)}
@@ -132,7 +135,8 @@ class App extends Component {
                     const studentRightMatchId = parseInt(studentAnswer[studentAnswerIdKey]);
                     const studentRightMatchText = studentRightMatchId ? question.matches.filter(match => studentRightMatchId === match.match_id)[0].text : null;
                     const answerCorrected = (studentRightMatchId === possibleAnswer.match_id ?
-                        <td>{studentRightMatchText} <b>&lt;-- Correct!</b></td> : <td>{studentRightMatchText} <b>&lt;-- Incorrect!</b></td>);
+                        <td>{studentRightMatchText} <b>&lt;-- Correct!</b></td> :
+                        <td>{studentRightMatchText} <b>&lt;-- Incorrect!</b></td>);
                     return (
                         <tr>
                             <td>{possibleAnswer.left}</td>
