@@ -71,8 +71,6 @@ class App extends Component {
     }
 
     renderByQuestionType(question) {
-        const renderedQuestionText = this.htmlToReactParser.parse(question.question_text);
-        //console.log("this.state.answers: ", this.state.answers);
         const studentAnswer = this.state.answers.reduce((studentAnswer, answer) => (answer.question_id === question.id ? answer : studentAnswer), null);
         if (!studentAnswer)
             throw new Error("Error: couldn't match student answer to a question!");
@@ -91,10 +89,7 @@ class App extends Component {
                     );
                 });
                 break;
-            case this.QUESTION_TYPES.TEXT_ONLY_QUESTION:
-                // do nothing
-                mappedAnswers = null;
-                break;
+
             case this.QUESTION_TYPES.FILE_UPLOAD_QUESTION:
                 const attachmentIds = studentAnswer.attachment_ids.map(attachmentId => <li>{attachmentId}</li>);
                 mappedAnswers = (
@@ -104,6 +99,7 @@ class App extends Component {
                     </div>
                 );
                 break;
+
             case this.QUESTION_TYPES.ESSAY_QUESTION:
                 const renderedAnswer = this.htmlToReactParser.parse(studentAnswer.text);
                 mappedAnswers = (
@@ -113,16 +109,19 @@ class App extends Component {
                     </div>
                 );
                 break;
+
             case this.QUESTION_TYPES.CALCULATED_QUESTION:
                 // TODO:
                 // console.log("studentAnswer: ", JSON.stringify(studentAnswer));
                 // console.log("question: ", JSON.stringify(question));
                 break;
+
             case this.QUESTION_TYPES.NUMERICAL_QUESTION:
                 // TODO:
                 // console.log("studentAnswer: ", JSON.stringify(studentAnswer));
                 // console.log("question: ", JSON.stringify(question));
                 break;
+
             case this.QUESTION_TYPES.MATCHING_QUESTION:
                 const renderedPossibleMatches = (
                     <ul>
@@ -161,8 +160,8 @@ class App extends Component {
                         </table>
                     </div>
                 );
-
                 break;
+
             case this.QUESTION_TYPES.MULTIPLE_DROPDOWNS_QUESTION:
             case this.QUESTION_TYPES.FILL_IN_MULTIPLE_BLANKS_QUESTION:
                 mappedAnswers = question.answers.map(possibleAnswer => {
@@ -176,6 +175,7 @@ class App extends Component {
                     );
                 });
                 break;
+
             case this.QUESTION_TYPES.MULTIPLE_ANSWERS_QUESTION:
                 mappedAnswers = question.answers.map(possibleAnswer => {
                     const studentAnswerIdKey = "answer_" + possibleAnswer.id;
@@ -187,6 +187,12 @@ class App extends Component {
                     );
                 });
                 break;
+
+            case this.QUESTION_TYPES.TEXT_ONLY_QUESTION:
+                // do nothing, this will render question text only
+                mappedAnswers = null;
+                break;
+
             default:
                 // not found show generic rendering
                 console.log("QUESTION NOT FOUND!");
@@ -197,10 +203,12 @@ class App extends Component {
                 );
         }
 
+        const questionTextRendered = this.htmlToReactParser.parse(question.question_text);
+        const questionTypeRendered = question.question_type.replace(/_/g, " ");
         return (
             <div className="boxed">
-                <h2>{question.question_name} <br/>({question.question_type.replace(/_/g, " ")})</h2>
-                <div>{renderedQuestionText}</div>
+                <h2>{question.question_name} <br/>({questionTypeRendered})</h2>
+                <div>{questionTextRendered}</div>
                 <div>{mappedAnswers}</div>
             </div>
         );
