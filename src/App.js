@@ -6,10 +6,12 @@ import {Parser} from 'html-to-react';
 // import answers from './data/answers';
 // import assignment from './data/assignment';
 // import questions from './data/questions';
+// Canvas rendered: https://utah.instructure.com/courses/509953/quizzes/1307989/history?quiz_submission_id=15486344&version=4&headless=1
 
 import answers from './data/answers_essay';
 import assignment from './data/assignment_essay';
 import questions from './data/questions_essay';
+// Canvas rendered: https://utah.test.instructure.com/courses/506631/quizzes/1280005/history?quiz_submission_id=15758667&headless=1&version=1
 
 class App extends Component {
 
