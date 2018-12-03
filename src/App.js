@@ -66,7 +66,7 @@ class App extends Component {
         );
     }
 
-    renderByQuestionType(question){
+    renderByQuestionType(question) {
         const renderedQuestionText = this.htmlToReactParser.parse(question.question_text);
         //console.log("this.state.answers: ", this.state.answers);
         const studentAnswer = this.state.answers.reduce((studentAnswer, answer) => (answer.question_id === question.id ? answer : studentAnswer), null);
@@ -76,26 +76,37 @@ class App extends Component {
         let mappedAnswers = null;
         switch (question.question_type) {
             case this.QUESTION_TYPES.MULTIPLE_CHOICE_QUESTION:
+            case this.QUESTION_TYPES.TRUE_FALSE_QUESTION:
+            case this.QUESTION_TYPES.SHORT_ANSWER_QUESTION:
                 mappedAnswers = question.answers.map(possibleAnswer => {
-                    const answer = studentAnswer.answer_id === possibleAnswer.id ? possibleAnswer.text + " <-- Student Answered": possibleAnswer.text;
-                    const answerCorrected = possibleAnswer.weight === 100 ? "Correct! --> " + answer : "-----------> " + answer;
+                    const answer = studentAnswer.answer_id === possibleAnswer.id ? possibleAnswer.text + " <b>&lt;-- Student Answered</b>" : possibleAnswer.text;
+                    const answerCorrected = possibleAnswer.weight === 100 ? "Correct! --> " + answer : "-----------&gt; " + answer;
+                    const answerRendered = this.htmlToReactParser.parse(answerCorrected);
                     return (
-                        <div>{answerCorrected}</div>
+                        <div>{answerRendered}</div>
                     );
                 });
-                // TODO:
                 break;
             case this.QUESTION_TYPES.TEXT_ONLY_QUESTION:
-                // TODO:
+                // do nothing
+                mappedAnswers = null;
                 break;
             case this.QUESTION_TYPES.FILE_UPLOAD_QUESTION:
-                // TODO:
+                const attachmentIds = studentAnswer.attachment_ids.map(attachmentId => <li>{attachmentId}</li>);
+                mappedAnswers = (
+                    <div>
+                        <b>Student uploaded file ids:</b>
+                        <ul>{attachmentIds}</ul>
+                    </div>
+                );
                 break;
             case this.QUESTION_TYPES.ESSAY_QUESTION:
+                const renderedAnswer = this.htmlToReactParser.parse(studentAnswer.text);
                 mappedAnswers = (
-                  <div>
-
-                  </div>
+                    <div>
+                        <b>Student answered:</b>
+                        <div>{renderedAnswer}</div>
+                    </div>
                 );
                 break;
             case this.QUESTION_TYPES.CALCULATED_QUESTION:
@@ -106,24 +117,77 @@ class App extends Component {
                 break;
             case this.QUESTION_TYPES.MATCHING_QUESTION:
                 // TODO:
+
+                // console.log("studentAnswer: ", JSON.stringify(studentAnswer));
+                // console.log("question: ", JSON.stringify(question));
+
+                const renderedPossibleMatches = (
+                    <ul>
+                        {question.matches.map(match => <li>{match.text}</li>)}
+                    </ul>
+                );
+
+                const answersRendered = question.answers.map(possibleAnswer => {
+                    const studentAnswerIdKey = "answer_" + possibleAnswer.id;
+                    const studentRightMatchId = parseInt(studentAnswer[studentAnswerIdKey]);
+                    const studentRightMatchText = studentRightMatchId ? question.matches.filter(match => studentRightMatchId === match.match_id)[0].text : null;
+                    const answerCorrected = (studentRightMatchId === possibleAnswer.match_id ?
+                        <td>{studentRightMatchText} <b>&lt;-- Correct!</b></td> : <td>{studentRightMatchText} <b>&lt;-- Incorrect!</b></td>);
+                    return (
+                        <tr>
+                            <td>{possibleAnswer.left}</td>
+                            <td>{possibleAnswer.right}</td>
+                            {answerCorrected}
+                        </tr>
+                    );
+                });
+
+                mappedAnswers = (
+                    <div>
+                        <h3>All possible right matches:</h3>
+                        <div>{renderedPossibleMatches}</div>
+                        <h3>Result:</h3>
+                        <table>
+                            <tr>
+                                <th>Left</th>
+                                <th>Right</th>
+                                <th>Student Match</th>
+                            </tr>
+                            {answersRendered}
+                        </table>
+                    </div>
+                );
+
                 break;
             case this.QUESTION_TYPES.MULTIPLE_DROPDOWNS_QUESTION:
-                // TODO:
+            case this.QUESTION_TYPES.FILL_IN_MULTIPLE_BLANKS_QUESTION:
+                mappedAnswers = question.answers.map(possibleAnswer => {
+                    const blankName = " for [" + possibleAnswer.blank_id + "]";
+                    const studentAnswerIdKey = "answer_id_for_" + possibleAnswer.blank_id;
+                    const answer = (studentAnswer[studentAnswerIdKey] === possibleAnswer.id) ? (possibleAnswer.text + blankName + " <b>&lt;-- Student Answered</b>") : (possibleAnswer.text) + blankName;
+                    const answerCorrected = (possibleAnswer.weight === 100 ? "Correct! --> " + answer : "-----------&gt; " + answer);
+                    const answerRendered = this.htmlToReactParser.parse(answerCorrected);
+                    return (
+                        <div>{answerRendered}</div>
+                    );
+                });
                 break;
             case this.QUESTION_TYPES.MULTIPLE_ANSWERS_QUESTION:
-                // TODO:
-                break;
-            case this.QUESTION_TYPES.FILL_IN_MULTIPLE_BLANKS_QUESTION:
-                // TODO:
-                break;
-            case this.QUESTION_TYPES.SHORT_ANSWER_QUESTION:
-                // TODO:
-                break;
-            case this.QUESTION_TYPES.TRUE_FALSE_QUESTION:
-                // TODO:
+                mappedAnswers = question.answers.map(possibleAnswer => {
+                    const studentAnswerIdKey = "answer_" + possibleAnswer.id;
+                    const answer = (studentAnswer[studentAnswerIdKey] && studentAnswer[studentAnswerIdKey] === "1") ? (possibleAnswer.text + " <b>&lt;-- Student Answered</b>") : (possibleAnswer.text);
+                    const answerCorrected = (possibleAnswer.weight === 100 ? "Correct! --> " + answer : "-----------&gt; " + answer);
+                    const answerRendered = this.htmlToReactParser.parse(answerCorrected);
+                    return (
+                        <div>{answerRendered}</div>
+                    );
+                });
                 break;
             default:
-            // not found show generic rendering
+                // not found show generic rendering
+                console.log("QUESTION NOT FOUND!");
+                console.log("studentAnswer: ", JSON.stringify(studentAnswer));
+                console.log("question: ", JSON.stringify(question));
                 mappedAnswers = (
                     <div>To Do:</div>
                 );
@@ -131,7 +195,7 @@ class App extends Component {
 
         return (
             <div className="boxed">
-                <h2>{question.question_name}</h2>
+                <h2>{question.question_name} <br/>({question.question_type.replace(/_/g, " ")})</h2>
                 <div>{renderedQuestionText}</div>
                 <div>{mappedAnswers}</div>
             </div>
